@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Guess My Number</title>
+  </head>
+  <body>
+    <main class="grid">
+      <canvas class="confetti" id="canvas"></canvas>
+      <section class="grid__central">
+        <div class="squares__mob"></div>
+        <div class="squares-left-col"></div>
+        <div class="flex__col">
+          <h1 class="heading1"></h1>
+          <h3 class="between_numbers">between 1 and 10</h3>
+          <input type="text" placeholder="guess here" class="input guess" />
+          <button class="btn check">check!</button>
+        </div>
+        
+        <div class="block pd-tp-12 pos">
+          <div class="squares__hor-center"></div>
+          <div class="question__container">
+            <p class="fs_big answer">?</p>
+          </div>
+          <h3 class="message">Start guessing...</h3>
+          <p class="hint"></p>
+        </div>
+        <div class="squares-right-col"></div>
+      </section>
+
+      <section class="grid__right">
+        <div class="block fs_md gr-row-1">
+          <span class="flex__row">
+            <p>score:</p>
+            <p class="score">0</p>
+          </span>
+
+          <span class="flex__row">
+            <p>highscore:</p>
+            <p class="highscore">0</p>
+          </span>
+        </div>
+
+        <div class="squares__hor"></div>
+
+        <div class="block gr-row-1">
+          <span class="flex__col">
+            <p class="fs_md">level:</p>
+            <span class="fs_big flex__row">
+              <button class="btn__arrow l_down"><</button>
+              <p class="fs_big level">1</p>
+              <button class="btn__arrow l_up">></button>
+            </p>
+          </span>
+        </div>
+
+        <div class="squares__hor"></div>
+
+        <div class="block gr-row-span2">
+          <button class="btn again">START AGAIN</button>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
